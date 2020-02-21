@@ -1,0 +1,38 @@
+{
+     "attention": "Attentional Bias", 
+     "attentionbias": "Attentional Bias", 
+     "bias": "Attentional Bias",
+
+     "eyetracking" : "AB Eyetracking",
+
+     "delaydiscounting": "Delay Discounting",
+
+     "foodstroop" : "Food Stroop",
+
+     "stoptask" : "Stop Task", 
+     "stop" : "Stop Task", 
+
+     "practicetask1" : "GoNoGo", 
+     "validation1" : "GoNoGo",
+     "practicetask" : "GoNoGo", 
+     "validation" : "GoNoGo",
+
+     "matrixreasoning" : "Matrix Reasoning", 
+     "matrixreasoningdata": "Matrix Reasoning",
+     "matrix" : "Matrix Reasoning",
+
+     "digitsymbolcodingdata": "Digit Symbol",
+      "digitsymbol" : "Digit Symbol", 
+      "digitsymbolcoding": "Digit Symbol",
+     "digitalsymbolcodingdata" : "Digit Symbol",
+      "digitsybolcodingdata": "Digit Symbol",
+
+     "emotionalstroop" : "Emotional Stroop",
+
+     "digitsymbolcoding": "Digit Symbol",
+     "digit": "Digit Symbol",
+
+     "gonogo": "Emotional GoNoGo",
+
+      "pac": "BCT"
+ }
