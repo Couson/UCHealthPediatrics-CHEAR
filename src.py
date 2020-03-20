@@ -49,9 +49,9 @@ def study_finder(id_):
         study = 'not found'
     return study
 
-def task_finder(study, file_name):
+def task_finder(study, file_name, dictionary):
     try:
-        belongings = extract_feature(study, file_name)[0]
+        belongings = extract_feature(study, file_name, dictionary)[0]
     except:
         belongings = 'not assigned'
     
@@ -67,7 +67,7 @@ def clean_task_name_lst(file_name):
 #     print(file_name_vec)
     return file_name_vec
 
-def extract_feature(study, file_name):
+def extract_feature(study, file_name, dictionary):
     vec = set()
     for i in clean_task_name_lst(file_name):
         i = i.lower()
@@ -80,7 +80,7 @@ def extract_feature(study, file_name):
                 vec = set()
                 vec.add('AB Eyetracking')
             else:
-                vec.add(TASKS_DICT[i])
+                vec.add(dictionary[i])
         except:
             continue
         
@@ -97,7 +97,7 @@ def initialize_log(columns, out_path, log_name):
     with open(return_path, 'w') as file:
         file.write(','.join(columns) + '\n')
 
-def update_log(file_ext, target_dir, out_path, log_name):
+def update_log(file_ext, target_dir, out_path, log_name, dictionary):
     return_path = os.path.join(out_path, log_name)
     
     assert file_ext[0] == '.', 'the extension in not in valid format; use \'.csv\' like [.*]'
@@ -155,7 +155,7 @@ def update_log(file_ext, target_dir, out_path, log_name):
             study = study_finder(id_)
             
             # task
-            task = task_finder(study, file_name)
+            task = task_finder(study, file_name, dictionary)
     
             # file type
             file_type = type_finder(file_name)

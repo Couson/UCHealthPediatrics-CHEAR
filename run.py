@@ -29,23 +29,24 @@ def logging(**cfg):
 	parent_dir = cfg['parent_dir']
 	STUDY_FOLDERS = literal_eval(cfg['STUDY_FOLDERS'])
 	LOG_COLUMNS = literal_eval(cfg['LOG_COLUMNS'])
+	TASKS_DICT = cfg['TASKS_DICT']
 
-	for study in glob.glob(os.path.join(parent_dir, '*')):
+	ALL = '*'
+
+	for study in glob.glob(os.path.join(parent_dir, ALL)):
 	    if study.split('/')[-1] in STUDY_FOLDERS:
-	        for task in glob.glob(os.path.join(study, '*')):
+	        for task in glob.glob(os.path.join(study, ALL)):
 	            file_name = task.split('/')[-1]
 	            log_name = file_name + '_log.csv'
 	            target_dir = task
 	            
 	            initialize_log(LOG_COLUMNS,
 	                           out_path, log_name)
-	            update_log(ext, target_dir, out_path, log_name)
+	            update_log(ext, target_dir, out_path, log_name, TASKS_DICT)
 
 def main(targets):
 	if 'logging' in targets:
 		cfg = load_params(LOG_CONFIG)
-		TASK_DICT = load_params(TASK_DICT_CONFIG)
-
 		logging(**cfg)
 
 

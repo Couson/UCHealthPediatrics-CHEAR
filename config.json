@@ -1,10 +1,49 @@
 {
-	"out_path": ".././logs",
+	"out_path": "./logs",
 	"ext": ".*",
 	"parent_dir": "/Volumes/Seagate Backup Plus Drive/1. CURRENT -TASK BACKUP SERVER 2019_WC",
 	
 	"STUDY_FOLDERS" : 
 	"['1. PACIFIC', '2. HEALTHY WEIGHT', '3. FRESH DOSE', '4. CHILD LEARN', '5. ReFRESH', '6. CHARGE', '7. FRESH TEEN', '8. PACIFIC-FIT', '9. NEXT']",
 	"LOG_COLUMNS": 
-	"['date', 'size', 'file_name', 'study', 'task','id', 'fid', 'dyad', 'time_point', 'ext', 'type']"
+	"['date', 'size', 'file_name', 'study', 'task','id', 'fid', 'dyad', 'time_point', 'ext', 'type']",
+	"TASKS_DICT":
+	{
+     "attention": "Attentional Bias", 
+     "attentionbias": "Attentional Bias", 
+     "bias": "Attentional Bias",
+
+     "eyetracking" : "AB Eyetracking",
+
+     "delaydiscounting": "Delay Discounting",
+
+     "foodstroop" : "Food Stroop",
+
+     "stoptask" : "Stop Task", 
+     "stop" : "Stop Task", 
+
+     "practicetask1" : "GoNoGo", 
+     "validation1" : "GoNoGo",
+     "practicetask" : "GoNoGo", 
+     "validation" : "GoNoGo",
+
+     "matrixreasoning" : "Matrix Reasoning", 
+     "matrixreasoningdata": "Matrix Reasoning",
+     "matrix" : "Matrix Reasoning",
+
+     "digitsymbolcodingdata": "Digit Symbol",
+      "digitsymbol" : "Digit Symbol", 
+      "digitsymbolcoding": "Digit Symbol",
+     "digitalsymbolcodingdata" : "Digit Symbol",
+      "digitsybolcodingdata": "Digit Symbol",
+
+     "emotionalstroop" : "Emotional Stroop",
+
+     "digitsymbolcoding": "Digit Symbol",
+     "digit": "Digit Symbol",
+
+     "gonogo": "Emotional GoNoGo",
+
+      "pac": "BCT"
+ }
 }
